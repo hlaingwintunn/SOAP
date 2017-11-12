@@ -18,7 +18,7 @@ public class CountryEndpoint {
 	
 	@Autowired
 	public CountryEndpoint(CountryRepository countryRepository) {
-		this.countryRepository = this.countryRepository;
+		this.countryRepository = countryRepository;
 	}
 	
 	@PayloadRoot(namespace = NAMESPAC_URI, localPart = "getCountryRequest")
